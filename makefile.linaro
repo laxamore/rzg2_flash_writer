@@ -178,6 +178,15 @@ DDR_TYPE = DDR4
 DDR_SIZE = 1GB_1PCS
 SWIZZLE  = T3BCUD2
 DEVICE_TYPE = 1
+else ifeq ("$(BOARD)", "RZG2LC_CUSTOM")
+#--------------------------------------
+# RZ/G2LC Custom Board
+#--------------------------------------
+FILENAME_ADD = _RZG2LC_CUSTOM
+DEVICE   = RZG2LC
+DDR_TYPE = DDR4
+DDR_SIZE = 512MB_1PCS
+SWIZZLE  = T3BC
 endif
 
 # Select SERIAL_FLASH("ENABLE"or"DISABLE" )
